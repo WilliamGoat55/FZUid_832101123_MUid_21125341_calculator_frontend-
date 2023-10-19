@@ -1,12 +1,7 @@
-# MyWebCalculator
-|-Student ID_calculator_frontend
- 
-​    |- src
-​
-​        |- basecalculator.html/.xml/.wxml
-​
-​    |- ......other files
- 
-|- README.md
- 
-|- codestyle.md
+# FZUid_832101123_MUid_21125341_calculator_frontend  
+- **src**
+   - index.html
+   - calculator.js
+   - styles.css
+- README.md
+- codestyle.md
