@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Simple Calculator</title>
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Calculator container -->
+    <div class="container">
+      <div id="calculator">
+        <!-- Display input container -->
+        <div class="input-container">
+          <input type="text" id="display" disabled />
+        </div>
+        <!-- Button rows -->
+        <div class="button-row">
+          <!-- Trigonometric functions and constants -->
+          <input type="button" value="sin" onclick="sine()" />
+          <input type="button" value="cos" onclick="cosine()" />
+          <input type="button" value="tan" onclick="tangent()" />
+          <input type="button" value="π" onclick="appendToDisplay('π')" />
+          <input type="button" value="C" onclick="clearDisplay()" />
+        </div>
+        <div class="button-row">
+          <!-- Basic arithmetic operations -->
+          <input type="button" value="+" onclick="appendToDisplay('+')" />
+          <input type="button" value="-" onclick="appendToDisplay('-')" />
+          <input type="button" value="×" onclick="multiply()" />
+          <input type="button" value="÷" onclick="divide()" />
+          <input type="button" value="^" onclick="power()" />
+        </div>
+        <div class="button-row">
+          <!-- Percentage, numbers, and backspace -->
+          <input type="button" value="%" onclick="complementation()" />
+          <input type="button" value="7" class="hover" onclick="appendToDisplay('7')" />
+          <input type="button" value="8" class="hover" onclick="appendToDisplay('8')" />
+          <input type="button" value="9" class="hover" onclick="appendToDisplay('9')" />
+          <input type="button" value="⌫" onclick="deleteElement()" />
+        </div>
+        <div class="button-row">
+          <!-- Squaring, more numbers, and parentheses -->
+          <input type="button" value="x²" onclick="square()" />
+          <input type="button" value="4" class="hover" onclick="appendToDisplay('4')" />
+          <input type="button" value="5" class="hover" onclick="appendToDisplay('5')" />
+          <input type="button" value="6" class="hover" onclick="appendToDisplay('6')" />
+          <input type="button" value="(" onclick="appendToDisplay('(')" />
+        </div>
+        <div class="button-row">
+          <!-- Factorial, more numbers, and parentheses -->
+          <input type="button" value="x!" onclick="factorial()" />
+          <input type="button" value="1" class="hover" onclick="appendToDisplay('1')" />
+          <input type="button" value="2" class="hover" onclick="appendToDisplay('2')" />
+          <input type="button" value="3" class="hover" onclick="appendToDisplay('3')" />
+          <input type="button" value=")" onclick="appendToDisplay(')')" />
+        </div>
+        <div class="button-row">
+          <!-- Square root, decimal point, zero, equals, and answer -->
+          <input type="button" value="√" onclick="squareRoot()" />
+          <input type="button" value="." onclick="appendToDisplay('.')" />
+          <input type="button" value="0" onclick="appendToDisplay('0')" />
+          <input type="button" value="=" onclick="calculate()" />
+          <input type="button" value="ans" id="ans" />
+        </div>
+      </div>
+      <!-- History container -->
+      <div class="history_container"></div>
+    </div>
+
+    <!-- JavaScript file inclusion -->
+    <script src="calculator.js"></script>
+  </body>
+</html>
