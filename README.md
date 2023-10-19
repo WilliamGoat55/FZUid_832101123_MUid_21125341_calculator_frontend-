@@ -4,4 +4,3 @@
    - calculator.js
    - styles.css
 - README.md
-- codestyle.md
